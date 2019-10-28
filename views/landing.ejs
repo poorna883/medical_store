@@ -1,0 +1,54 @@
+<% include partials/header %>
+<div class="ui fixed inverted menu">
+			<div class="ui  container">
+				<div class="header item">
+					<div class="ui huge header"></div><a href="/"><i class="medkit icon"></i>Medical Store</a></div>
+				
+					
+					
+				</div>
+			</div>
+<div class="ui middle aligned center grid">
+<div class="ui placeholder segment container" style="margin: 8em">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+      <form action="/login" class="ui form" method="POST">
+        <div class="field">
+          <label>Username</label>
+          <div class="ui left icon input">
+            <input type="text" placeholder="Username" name="username">
+            <i class="user icon"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="ui left icon input">
+            <input type="password" placeholder="Password" name="password">
+            <i class="lock icon"></i>
+          </div>
+        </div>
+		  <button class="ui submit button">Login</button>
+	
+      </form>
+    </div>
+    <div class="middle aligned column">
+      <div class="ui big button">
+			<a href="/register">
+       		 <i class="signup icon">
+				</i>Sign Up
+		  </a>
+      </div>
+		  <div class="ui big button" style="margin-top: 2em">
+			<a href="/admin">
+       		 <i class="user icon">
+				</i>Admin Login
+		  </a>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical divider">
+    Or
+  </div>
+</div>
+
+<% include partials/footer %>
